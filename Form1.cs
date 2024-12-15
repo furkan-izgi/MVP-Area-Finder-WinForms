@@ -57,11 +57,29 @@ namespace MVPAreaFinder
 
             if (comboBoxShapes.SelectedIndex == 0)
             {
-                presenter.CalculateRectangleArea();
+                if (textBoxWidth.Text != "" && textBoxHeight.Text != "")
+                {
+                    presenter.CalculateRectangleArea();
+                }
+                else
+                {
+                    MessageBox.Show("Missing Value(s)", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else if (comboBoxShapes.SelectedIndex == 1)
+            {
+                if (textBoxWidth.Text != "")
+                {
+                    presenter.CalculateSquareArea();
+                }
+                else
+                {
+                    MessageBox.Show("Missing Value", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
-                presenter.CalculateSquareArea();
+                MessageBox.Show("Select a Shape", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -74,7 +92,7 @@ namespace MVPAreaFinder
                 textBoxHeight.Enabled = true;
                 labelWidth.Text = "Width  :";
             }
-            else
+            if (comboBoxShapes.SelectedIndex == 1)
             {
                 textBoxHeight.Clear();
                 textBoxWidth.Clear();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVPAreaFinder.Views
 {
-    internal interface IFinder
+    public interface IFinder
     {
         string rectangleWidthText { get; set; }
         string rectangleHeightText { get; set; }

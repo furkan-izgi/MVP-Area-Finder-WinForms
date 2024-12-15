@@ -8,7 +8,7 @@ using MVPAreaFinder.Models;
 
 namespace MVPAreaFinder.Presenters
 {
-    internal class FinderPresenter
+    public class FinderPresenter
     {
         IFinder View;
 

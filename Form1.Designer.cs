@@ -102,13 +102,13 @@
             // 
             // comboBoxShapes
             // 
+            comboBoxShapes.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxShapes.FormattingEnabled = true;
             comboBoxShapes.Items.AddRange(new object[] { "Rectangle", "Square" });
             comboBoxShapes.Location = new Point(71, 62);
             comboBoxShapes.Name = "comboBoxShapes";
             comboBoxShapes.Size = new Size(115, 23);
             comboBoxShapes.TabIndex = 7;
-            comboBoxShapes.Text = "Rectangle";
             comboBoxShapes.SelectedIndexChanged += comboBoxShapes_SelectedIndexChanged;
             // 
             // label2
