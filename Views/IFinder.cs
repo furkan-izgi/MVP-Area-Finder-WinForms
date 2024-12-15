@@ -11,6 +11,6 @@ namespace MVPAreaFinder.Views
         string rectangleWidthText { get; set; }
         string rectangleHeightText { get; set; }
         string squareLengthText { get; set; }
-        string AreaResultText { get; set; }
+        string AreaResultText { set; }
     }
 }

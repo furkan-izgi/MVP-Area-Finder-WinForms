@@ -8,12 +8,12 @@ namespace MVPAreaFinder.Models
 {
     public class Rectangle
     {
-        public double Rwidth { get; set; }
-        public double Rheight { get; set; }
+        public double RectWidth { get; set; }
+        public double RectHeight { get; set; }
 
         public double calculateRectangleArea()
         {
-            return Rwidth * Rheight;
+            return RectWidth * RectHeight;
         }
     }
 }

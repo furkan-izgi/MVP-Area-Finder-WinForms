@@ -45,10 +45,6 @@ namespace MVPAreaFinder
         }
         public string AreaResultText
         {
-            get
-            {
-                return labelResult.Text;
-            }
             set
             {
                 labelResult.Text = value;

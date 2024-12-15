@@ -19,8 +19,8 @@ namespace MVPAreaFinder.Presenters
         public void CalculateRectangleArea()
         {
             Models.Rectangle rectangle = new Models.Rectangle();
-            rectangle.Rwidth = double.Parse(View.rectangleWidthText);
-            rectangle.Rheight = double.Parse(View.rectangleHeightText);
+            rectangle.RectWidth = double.Parse(View.rectangleWidthText);
+            rectangle.RectHeight = double.Parse(View.rectangleHeightText);
 
             View.AreaResultText = rectangle.calculateRectangleArea().ToString();
         }
